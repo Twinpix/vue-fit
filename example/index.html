@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <style>
+    * {
+      padding:0;
+      margin:0;     
+    }
+    html,body {
+      position: absolute;
+      width:100%;
+      height:100%;
+      background-color: #000;
+    }
+    #app {
+      width: 300px;
+      height: 400px;
+      background-color: #f00;
+    }
+    </style>
+  </head>
+  <body>
+    <div v-fit="{watch:true}" id="app">
+    </div>
+    <script src="example.build.js"></script>
+  </body>
+</html>

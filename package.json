@@ -1,0 +1,19 @@
+{
+  "name": "vue-fit",
+  "version": "0.1.0",
+  "main": "vue-fit.js",
+  "repository": "https://github.com/Twinpix/vue-fit.git",
+  "license": "MIT",
+  "dependencies": {
+    "fit.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.7.5",
+    "vue": "^2.1.10",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "build": "webpack example/example.js example/example.build.js && uglifyjs vue-fit.js -c -m > vue-fit.min.js",
+    "dev": "webpack --watch example/example.js example/example.build.js"
+  }
+}
